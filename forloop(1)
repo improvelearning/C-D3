@@ -1,0 +1,47 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+//NOTE
+//user enter 2 number, big small
+//big times big N - 1 to small 
+//number 2 = 7
+//number2--
+//if 10, 7 programm run 3 times
+//10 * 9 * 8
+
+//line 1-2: int
+//line 3: output
+//line 4: intput
+//line 6 forloop
+//line 6(int; if i </= 3 ; int = int + 1)//loop 3 times == 
+//forloop codes
+        // int answer;
+        // int progress;
+        // progress = number1--; // int = 10 - 1
+        // answer = number1 * number1;
+        // cout << answer;
+
+int main(){
+    int number1;
+    int number2;
+    int answer = 1;
+    cout << "enter 2 numbers : \n";
+    cin >> number1 >> number2;
+
+    if ( number1 > number2)
+    {
+        for (int i = number1 ; i >= number2 ; i--)
+        {
+            answer *= i; //*= equal to int a = int a * int b
+        }
+
+        cout << "the answer is : " << answer << endl;      
+
+    }
+    else if(number2 > number1)
+    {
+        cout << "ERROR:first nunber is bigger than second number\n";
+    }
+    return 0;
+}
