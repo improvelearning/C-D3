@@ -1,0 +1,54 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+//NOTE
+// if input = 10 , 5
+// programmme:
+// **********
+// **********
+// **********
+// **********
+// **********
+// **********
+//1 < 2
+//2 > 1
+//--FORLOOP--
+    // for (int i = 0 ; i < height ; i++)
+    // {
+    //     for (int j = 1 ; j < length ; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     cout << "*" << endl;
+    // }
+
+//--WHILELOOP--
+    // while (height > 0)
+    // {
+    //     counter = length;
+    //     while (counter > 0){
+    //         cout << "*" ;
+    //         counter --;
+    //     }
+    //     cout << endl;
+    //     height --;
+    // }
+ 
+int main(){
+    int length, height;
+    int counter = 0;
+    cout << "please enter the length and height : \n";
+    cin >> length >> height;
+ 
+    for (int i = 0 ; i < height ; i++)
+    {
+        for (int j = 1 ; j < length ; j++)
+        {
+            cout << "*";
+        }
+        cout << "*" << endl;
+    }
+    
+    return 0;
+}
